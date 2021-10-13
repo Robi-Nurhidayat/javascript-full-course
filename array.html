@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <ul>
+        <li id="demo"></li>
+    </ul>
+
+    <ol>
+        <li>Data manual</li>
+        <li id="data"></li>
+    </ol>
+
+    <h2>urutan angka</h2>
+    <ol id="angka">
+
+    </ol>
+
+    <script>
+        const name = ['ayam','ikan','sapi'];
+
+        const data = document.getElementById('demo').innerHTML = name
+
+
+        const data2 = ['pertama','kedua','ketiga','terakhir']
+
+        document.getElementById('data').innerText =  data2[data2.length - 1]
+
+        // looping array
+
+        const angka = [1,2,3,4,5,6]
+
+        let tempAngka = document.getElementById('angka');
+
+
+        for(let i = 0; i < angka.length; i++){
+            document.writeln(angka[i])
+        }
+
+    </script>
+</body>
+</html>
