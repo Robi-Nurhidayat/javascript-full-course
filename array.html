@@ -22,6 +22,16 @@
 
     </ol>
 
+    <div>
+        <ul>
+            <li id="app"></li>
+        </ul>
+    </div>
+
+
+    <div id="baru"></div>
+
+
     <script>
         const name = ['ayam','ikan','sapi'];
 
@@ -42,6 +52,23 @@
         for(let i = 0; i < angka.length; i++){
             document.writeln(angka[i])
         }
+
+
+       let p = [1,2,3,4];
+
+       let app = document.getElementById('app');
+
+       p.forEach((value) => {
+            app.innerHTML = value ;
+       })
+
+    //    menambah element baru
+
+    const array_baru = [1,2,3,4,5];
+
+    array_baru[array_baru.length] = 6;
+
+    console.log(array_baru)
 
     </script>
 </body>
